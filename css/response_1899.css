@@ -1,0 +1,518 @@
+@media print,
+(max-width: 1899px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --outside_gap_l: 120px;
+        --outside_gap: 100px;
+        --outside_gap_m: 80px;
+        --outside_gap_s: 68px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        --swiper-navigation-size: 80px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding-block: var(--inner_gap);
+    }
+
+
+    header .partner
+    {
+        margin-left: var(--cont_padding_double);
+    }
+
+
+    header .messengers a
+    {
+        width: 48px;
+    }
+
+
+    header .menu
+    {
+        margin-left: var(--inner_gap_m);
+    }
+
+
+    header .menu .mini_modal_btn
+    {
+        width: 200px;
+        height: 68px;
+    }
+
+
+    header .menu .mini_modal
+    {
+        width: 480px;
+        margin-top: 40px;
+
+        gap: var(--block_padding_l);
+    }
+
+
+    header .menu .mini_modal .links
+    {
+        gap: var(--inner_gap_m);
+    }
+
+
+    header .menu .mini_modal .links .label
+    {
+        font-size: var(--font_size);
+    }
+
+
+    header .menu .mini_modal .links .items
+    {
+        font-size: var(--font_size_title_xs);
+
+        gap: var(--inner_gap_l);
+    }
+
+
+    header .menu .mini_modal .btn
+    {
+        height: 72px;
+        padding-inline: var(--block_padding_l);
+    }
+
+
+    header .menu .mini_modal .btn:before
+    {
+        width: 44px;
+        height: 108px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form
+    {
+        --form_input_height: 72px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .btn
+    {
+        height: 72px;
+    }
+
+
+    .block_head .btn:before
+    {
+        width: 44px;
+        height: 108px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .head
+    {
+        gap: var(--block_padding_l);
+    }
+
+
+    .first_section .name
+    {
+        font-size: 100px;
+    }
+
+
+    .first_section .desc
+    {
+        width: 344px;
+
+        font-size: var(--font_size);
+        line-height: 140%;
+    }
+
+
+    .first_section .mode .btns:before
+    {
+        top: -21px;
+
+        width: 44px;
+        height: 103px;
+    }
+
+
+    .first_section .mode .btns .btn
+    {
+        height: 60px;
+        padding-inline: var(--inner_gap_m);
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .item
+    {
+        min-height: 320px;
+        padding: var(--inner_gap);
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .project
+    {
+        padding: var(--block_padding_s);
+    }
+
+
+    .projects .project .name
+    {
+        width: 300px;
+    }
+
+
+
+    /*--------------
+        For whom
+    --------------*/
+    .for_whom .block_head
+    {
+        width: 408px;
+    }
+
+
+    .for_whom .if_you_need
+    {
+        width: 340px;
+    }
+
+
+    .for_whom .other_place
+    {
+        width: 400px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .block_head .title
+    {
+        width: 532px;
+    }
+
+
+    .steps .block_head .desc
+    {
+        width: 428px;
+    }
+
+
+    .steps .grid_row:after
+    {
+        top: 108px;
+    }
+
+
+    .steps .item
+    {
+        padding: var(--inner_gap);
+    }
+
+
+    .steps .item .number
+    {
+        font-size: 52px;
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .item
+    {
+        font-size: var(--font_size_l);
+
+        gap: var(--inner_gap);
+    }
+
+
+    .why_we .item .icon,
+    .why_we .item .icon img
+    {
+        width: 40px;
+    }
+
+
+    .why_we .item span
+    {
+        width: calc(100% - 40px - var(--inner_gap));
+    }
+
+
+    .why_we .item br
+    {
+        display: none;
+    }
+
+
+
+    /*-----------------
+        Info blocks
+    -----------------*/
+    .info_blocks .slider_block .swiper-button-next,
+    .info_blocks .slider_block .swiper-button-prev
+    {
+        bottom: var(--outside_gap_m);
+    }
+
+
+    .info_blocks .accordion_item .head .title
+    {
+        width: calc(100% - 52px);
+    }
+
+
+    .info_blocks .scroll_down
+    {
+        width: 112px;
+        height: 160px;
+    }
+
+
+
+    /*------------
+        Nearby
+    ------------*/
+    .nearby .item
+    {
+        min-height: 400px;
+        padding: var(--inner_gap);
+    }
+
+
+
+    /*-----------
+        Rules
+    -----------*/
+    .rules .block_head
+    {
+        width: 368px;
+    }
+
+
+    .rules .data
+    {
+        width: calc(100% - 440px);
+    }
+
+
+    .rules .item + .item
+    {
+        margin-top: -52px;
+    }
+
+
+
+    /*-------------
+        Persons
+    -------------*/
+    .persons .person .tg_link
+    {
+        height: 52px;
+    }
+
+
+    .persons .person .info
+    {
+        padding-inline: var(inner_gap_s);
+    }
+
+
+    .persons .person .phone
+    {
+        font-size: var(--font_size_xl);
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .map
+    {
+        width: 540px;
+    }
+
+
+    .contacts_info .data
+    {
+        width: calc(100% - 588px);
+    }
+
+
+    .contacts_info .location br
+    {
+        display: none;
+    }
+
+
+    .contacts_info .row
+    {
+        margin-top: var(--inner_gap_m);
+    }
+
+
+    .contacts_info .info
+    {
+        width: 100%;
+    }
+
+
+    .contacts_info .paths .item .icon + *
+    {
+        gap: var(--inner_gap_xxs);
+    }
+
+
+    .contacts_info .paths .item .name br
+    {
+        display: none;
+    }
+
+
+    .contacts_info .contacts
+    {
+        padding-top: var(--inner_gap_m);
+    }
+
+
+    .contacts_info .form
+    {
+        width: 100%;
+        margin-top: var(--block_padding);
+    }
+
+
+
+    /*------------------
+        Project info
+    ------------------*/
+    .project_info
+    {
+        padding-top: var(--block_padding_l);
+    }
+
+
+    .project_info .head .back_link
+    {
+        height: 72px;
+        margin-bottom: var(--block_padding_s);
+    }
+
+
+    .project_info .head .image
+    {
+        width: calc(100% - 500px);
+        margin-right: -100px;
+    }
+
+
+
+    .project_info .changing .item
+    {
+        font-size: var(--font_size_l);
+
+        gap: var(--inner_gap);
+    }
+
+
+    .project_info .changing .item .icon,
+    .project_info .changing .item .icon img
+    {
+        width: 40px;
+    }
+
+
+    .project_info .changing .item span
+    {
+        width: calc(100% - 40px - var(--inner_gap));
+    }
+
+
+    .project_info .changing .item br
+    {
+        display: none;
+    }
+
+
+    .project_info .changing .main
+    {
+        margin-top: var(--block_padding_l);
+
+        font-size: 28px;
+    }
+
+
+
+    .project_info .kids_receive .download a
+    {
+        height: 72px;
+    }
+
+
+
+    .project_info .photo_gallery .swiper-slide
+    {
+        height: 640px;
+        padding-block: 60px;
+        padding-inline: var(--block_padding);
+    }
+
+
+    .project_info .photo_gallery .swiper-button-next,
+    .project_info .photo_gallery .swiper-button-prev
+    {
+        bottom: 60px;
+    }
+
+
+    .project_info .photo_gallery .swiper-button-next
+    {
+        right: var(--block_padding);
+
+        margin-right: 0;
+    }
+
+
+    .project_info .photo_gallery .swiper-button-prev
+    {
+        right: calc(var(--block_padding) + var(--swiper-navigation-size) + var(--inner_gap_s));
+
+        margin-right: 0;
+    }
+}

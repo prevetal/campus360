@@ -1,0 +1,600 @@
+@media (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --cont_padding: 20px;
+        --font_size_title_l: 40px;
+        --font_size_title: 32px;
+        --font_size_title_s: 24px;
+        --font_size_title_xs: 20px;
+        --block_padding_l: 36px;
+        --block_padding: 28px;
+        --block_padding_s: 20px;
+        --outside_gap_l: 80px;
+        --outside_gap: 68px;
+        --outside_gap_m: 60px;
+        --outside_gap_s: 52px;
+        --inner_gap_l: 20px;
+        --inner_gap_m: 20px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        --swiper-navigation-size: 60px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding-block: var(--inner_gap_s);
+    }
+
+
+    header .logo img
+    {
+        width: 120px;
+        height: 53px;
+    }
+
+
+    header .contacts
+    {
+        display: none;
+    }
+
+
+    header .menu .mini_modal_btn
+    {
+        width: 168px;
+        height: 56px;
+    }
+
+
+    header .menu .mini_modal
+    {
+        width: 360px;
+        margin-top: var(--inner_gap_m);
+        padding: var(--inner_gap_m);
+    }
+
+
+    header .menu .mini_modal .btn
+    {
+        height: 60px;
+    }
+
+
+    header .menu .mini_modal .btn:before
+    {
+        width: 38px;
+        height: 89px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .btn
+    {
+        height: 60px;
+    }
+
+
+    .block_head .btn:before
+    {
+        width: 38px;
+        height: 89px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form
+    {
+        --form_input_height: 60px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h3
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .name
+    {
+        font-size: 80px;
+    }
+
+
+    .first_section .mode .btns .btn
+    {
+        height: 48px;
+    }
+
+
+    .first_section .mode .btns:before
+    {
+        width: 38px;
+        height: 89px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .grid_row > *
+    {
+        width: 260px;
+    }
+
+
+    .advantages .item
+    {
+        min-height: 300px;
+    }
+
+
+    .advantages .item .name
+    {
+        min-height: 36px;
+    }
+
+
+    .advantages .item .title
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .advantages .item .icon
+    {
+        height: 36px;
+    }
+
+
+
+    /*--------------
+        For whom
+    --------------*/
+    .for_whom .block_head .title span::before
+    {
+        left: 98px;
+
+        width: 15px;
+    }
+
+
+    .for_whom .block_head .title span:after
+    {
+        left: -12px;
+
+        width: 260px;
+        height: 5px;
+    }
+
+
+    .for_whom .if_you_need
+    {
+        width: 100%;
+    }
+
+
+    .for_whom .other_place
+    {
+        width: 100%;
+        margin-top: var(--block_padding_l);
+        margin-left: 0;
+        padding-top: var(--block_padding_l);
+        padding-left: 0;
+
+        border: none;
+        border-top: 1px solid rgba(217, 217, 217, .42);
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .block_head .title span:before
+    {
+        width: 76px;
+        height: 5px;
+    }
+
+
+    .steps .item .name
+    {
+        font-size: var(--font_size_xl);
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+    .why_we .item
+    {
+        gap: var(--inner_gap_xs);
+    }
+
+
+    .why_we .item .icon,
+    .why_we .item .icon img
+    {
+        width: 32px;
+    }
+
+
+    .why_we .item span
+    {
+        width: calc(100% - 32px - var(--inner_gap_xs));
+    }
+
+
+
+    /*-----------------
+        Info blocks
+    -----------------*/
+    .info_blocks .slider_block .cont
+    {
+        height: auto;
+        min-height: 520px;
+        padding-bottom: 120px;
+    }
+
+
+    .info_blocks .info_block .cont
+    {
+        height: auto;
+        min-height: 460px;
+        padding-block: var(--block_padding_l);
+    }
+
+
+    .info_blocks .info_block .title
+    {
+        width: 360px;
+    }
+
+
+    .info_blocks .accordion
+    {
+        width: 100%;
+    }
+
+
+    .info_blocks .info_block .image:before
+    {
+        position: absolute;
+        inset: 0;
+
+        display: block;
+
+        content: '';
+
+        background: linear-gradient(66deg, rgba(0, 0, 0, .4) 22.66%, rgba(0, 0, 0, .00) 160.48%);
+    }
+
+
+
+    /*-----------
+        Rules
+    -----------*/
+    .rules .item .icon
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .map
+    {
+        height: 400px;
+    }
+
+
+    .contacts_info .paths .item .name
+    {
+        font-size: var(--font_size_l);
+    }
+
+
+    .contacts_info .paths .item
+    {
+        gap: var(--inner_gap_s);
+    }
+
+
+    .contacts_info .paths .item .icon
+    {
+        width: 40px;
+    }
+
+
+    .contacts_info .paths .item .icon + *
+    {
+        width: calc(100% - 40px - var(--inner_gap_s));
+    }
+
+
+    .contacts_info .contacts .item .phone,
+    .contacts_info .contacts .item .email
+    {
+        font-size: var(--font_size_xl);
+    }
+
+
+
+    /*------------------
+        Project info
+    ------------------*/
+    .project_info .head .back_link
+    {
+        height: 56px;
+    }
+
+
+    .project_info .head .info > *
+    {
+        height: 40px;
+    }
+
+
+
+    .project_info .why .block_head .title span:after
+    {
+        width: 252px;
+        height: 6px;
+    }
+
+
+    .project_info .why .row
+    {
+        gap: var(--block_padding_l);
+    }
+
+
+    .project_info .why .item
+    {
+        width: 100%;
+    }
+
+
+    .project_info .why .item.b_w
+    {
+        margin-top: 0;
+    }
+
+
+    .project_info .why .grass
+    {
+        width: 300%;
+        margin-inline: -100%;
+    }
+
+
+
+    .project_info .changing .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+    .project_info .changing .item
+    {
+        gap: var(--inner_gap_xs);
+    }
+
+
+    .project_info .changing .item .icon,
+    .project_info .changing .item .icon img
+    {
+        width: 32px;
+    }
+
+
+    .project_info .changing .item span
+    {
+        width: calc(100% - 32px - var(--inner_gap_xs));
+    }
+
+
+    .project_info .changing .main
+    {
+        justify-content: center;
+
+        text-align: center;
+    }
+
+
+
+    .project_info .included .item:after
+    {
+        display: none;
+    }
+
+
+
+    .project_info .kids_receive .block_head
+    {
+        width: 100%;
+        margin-bottom: var(--block_head_offset);
+    }
+
+
+    .project_info .kids_receive .download a
+    {
+        height: 56px;
+    }
+
+
+    .project_info .kids_receive .items
+    {
+        width: 100%;
+    }
+
+
+
+    .project_info .photo_gallery .swiper
+    {
+        overflow: visible;
+
+        border-radius: 0;
+    }
+
+
+    .project_info .photo_gallery .swiper-slide
+    {
+        width: 360px;
+    }
+
+
+    .project_info .photo_gallery .swiper-slide
+    {
+        height: auto;
+        padding-block: 0;
+    }
+
+
+    .project_info .photo_gallery .swiper-button-next,
+    .project_info .photo_gallery .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+    .project_info .photo_gallery .image
+    {
+        position: relative;
+
+        overflow: hidden;
+
+        height: 369px;
+        margin-bottom: var(--inner_gap);
+
+        border-radius: var(--border_radius);
+    }
+
+
+    .project_info .photo_gallery .info
+    {
+        width: 100%;
+
+        color: var(--cont_padding);
+    }
+
+
+    .project_info .photo_gallery .name
+    {
+        font-size: 26px;
+    }
+
+
+
+    .project_info .formats .data .sep
+    {
+        margin-block: var(--block_padding_l);
+    }
+
+
+    .project_info .formats .data .prices
+    {
+        column-gap: var(--block_padding);
+        row-gap: var(--inner_gap_xs);
+    }
+
+
+    .project_info .formats .data .prices .general
+    {
+        width: 100%;
+        padding-bottom: var(--inner_gap_xs);
+
+        border-bottom: 1px solid rgba(217, 217, 217, .50);
+    }
+
+
+    .project_info .formats .data .prices > *
+    {
+        padding-left: 0;
+
+        border: none;
+    }
+
+
+    .project_info .formats .btn
+    {
+        height: 56px;
+    }
+
+
+
+    /*-------------
+        Why now
+    -------------*/
+    .why_now .btns .btn
+    {
+        height: 56px;
+    }
+
+
+    .why_now .btns .btn .icon
+    {
+        width: 16px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .cont
+    {
+        gap: var(--inner_gap);
+    }
+
+
+    footer .privacy_policy_link
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    footer .creator
+    {
+        margin-inline: auto;
+    }
+}

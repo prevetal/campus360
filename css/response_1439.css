@@ -1,0 +1,851 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title_l: 46px;
+        --font_size_title: 38px;
+        --font_size_title_s: 30px;
+        --font_size_title_xs: 22px;
+        --block_padding_l: 40px;
+        --block_padding: 32px;
+        --block_padding_s: 24px;
+        --outside_gap_l: 100px;
+        --outside_gap: 80px;
+        --outside_gap_m: 68px;
+        --outside_gap_s: 60px;
+        --inner_gap_l: 24px;
+        --border_radius_l: 20px;
+        --border_radius: 16px;
+        --border_radius_s: 12px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        --swiper-navigation-size: 68px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .menu .mini_modal
+    {
+        width: 440px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form
+    {
+        --form_input_height: 72px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        margin-bottom: 28px;
+    }
+
+    .text_block h3
+    {
+        font-size: 28px;
+    }
+
+
+    .text_block * + h2,
+    .text_block * + h3
+    {
+        margin-top: var(--block_padding_l);
+    }
+
+
+    .text_block ul
+    {
+        gap: var(--inner_gap_xxs);
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .head
+    {
+        row-gap: var(--inner_gap);
+        column-gap: var(--block_padding_l);
+    }
+
+
+    .first_section .name
+    {
+        width: 100%;
+
+        font-size: 92px;
+    }
+
+
+    .first_section .desc
+    {
+        width: calc(100% - 440px);
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .grid_row
+    {
+        display: grid;
+        overflow: auto;
+
+        margin-block: 0;
+        margin-inline: calc(var(--cont_padding) * -1);
+        padding-inline: var(--cont_padding);
+
+        gap: var(--inner_gap_xs);
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        scroll-padding: 0 var(--inner_gap);
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent;
+        scrollbar-width: thin;
+    }
+
+
+    .advantages .grid_row::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+
+    .advantages .grid_row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+
+    .advantages .grid_row > *
+    {
+        width: 224px;
+        margin: 0;
+
+        scroll-snap-align: start;
+    }
+
+
+    .advantages .item .name
+    {
+        min-height: 40px;
+    }
+
+
+    .advantages .item .icon
+    {
+        height: 40px;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .project .name
+    {
+        width: 280px;
+    }
+
+
+    .projects .project .date
+    {
+        height: 40px;
+
+        font-size: var(--font_size);
+    }
+
+
+
+    /*--------------
+        For whom
+    --------------*/
+    .for_whom .block_head
+    {
+        width: 332px;
+    }
+
+
+    .for_whom .block_head .title span::before
+    {
+        left: 113px;
+
+        width: 16px;
+    }
+
+
+    .for_whom .block_head .title span:after
+    {
+        left: -16px;
+
+        width: 304px;
+        height: 6px;
+    }
+
+
+    .for_whom .if_you_need
+    {
+        width: 320px;
+    }
+
+
+    .for_whom .other_place
+    {
+        width: 380px;
+    }
+
+
+    .for_whom .if_you_need .items,
+    .for_whom .other_place .items
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .block_head .title
+    {
+        width: 480px;
+    }
+
+
+    .steps .block_head .title span:before
+    {
+        width: 92px;
+        height: 6px;
+    }
+
+
+    .steps .grid_row
+    {
+        display: grid;
+        overflow: auto;
+
+        margin-block: 0;
+        margin-inline: calc(var(--cont_padding) * -1);
+        padding-inline: var(--cont_padding);
+
+        gap: var(--inner_gap_xs);
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        scroll-padding: 0 var(--inner_gap);
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent;
+        scrollbar-width: thin;
+    }
+
+
+    .steps .grid_row::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+
+    .steps .grid_row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+
+    .steps .grid_row:after
+    {
+        display: none;
+    }
+
+
+    .steps .grid_row > *
+    {
+        width: 260px;
+        margin: 0;
+
+        scroll-snap-align: start;
+    }
+
+
+    .steps .item
+    {
+        min-height: 348px;
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .grid_row
+    {
+        --items_per_line: 4;
+    }
+
+
+
+    /*-----------------
+        Info blocks
+    -----------------*/
+    .info_blocks .slider_block .swiper-button-next
+    {
+        right: var(--cont_padding);
+
+        margin-right: 0;
+    }
+
+
+    .info_blocks .slider_block .swiper-button-prev
+    {
+        right: calc(var(--cont_padding) + var(--swiper-navigation-size) + var(--inner_gap_xs));
+
+        margin-right: 0;
+    }
+
+
+    .info_blocks .accordion_item + .accordion_item
+    {
+        margin-top: 32px;
+        padding-top: 32px;
+    }
+
+
+    .info_blocks .info_block .cont
+    {
+        padding-block: var(--outside_gap_s);
+    }
+
+
+    .info_blocks .scroll_down
+    {
+        bottom: var(--inner_gap_m);
+
+        width: 108px;
+        height: 140px;
+    }
+
+
+
+    /*------------
+        Nearby
+    ------------*/
+    .nearby .grid_row
+    {
+        display: grid;
+        overflow: auto;
+
+        margin-block: 0;
+        margin-inline: calc(var(--cont_padding) * -1);
+        padding-inline: var(--cont_padding);
+
+        gap: var(--inner_gap_xs);
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        scroll-padding: 0 var(--inner_gap);
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent;
+        scrollbar-width: thin;
+    }
+
+
+    .nearby .grid_row::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+
+    .nearby .grid_row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+
+    .nearby .grid_row > *
+    {
+        width: 268px;
+        margin: 0;
+
+        scroll-snap-align: start;
+    }
+
+
+    .nearby .item
+    {
+        min-height: 380px;
+    }
+
+
+    .nearby .item .name
+    {
+        min-height: 40px;
+    }
+
+
+    .nearby .item .icon
+    {
+        height: 40px;
+    }
+
+
+
+    /*-----------
+        Rules
+    -----------*/
+    .rules .block_head
+    {
+        width: 320px;
+    }
+
+
+    .rules .data
+    {
+        width: calc(100% - 400px);
+    }
+
+
+    .rules .item
+    {
+        padding-block: var(--block_padding_s) 72px;
+    }
+
+
+    .rules .item + .item
+    {
+        margin-top: -48px;
+    }
+
+
+    .rules .item .icon
+    {
+        right: 172px;
+        bottom: 48px;
+
+        width: 152px;
+    }
+
+
+    .rules .item:first-child .icon
+    {
+        right: 158px;
+
+        width: 180px;
+    }
+
+
+
+    /*-------------
+        Persons
+    -------------*/
+    .persons .grid_row
+    {
+        display: grid;
+        overflow: auto;
+
+        margin-block: 0;
+        margin-inline: calc(var(--cont_padding) * -1);
+        padding-inline: var(--cont_padding);
+
+        gap: var(--inner_gap_xs);
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        scroll-padding: 0 var(--inner_gap);
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent;
+        scrollbar-width: thin;
+    }
+
+
+    .persons .grid_row::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+
+    .persons .grid_row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+
+    .persons .grid_row > *
+    {
+        width: 268px;
+        margin: 0;
+
+        scroll-snap-align: start;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .swiper-slide
+    {
+        width: 316px;
+    }
+
+
+    .reviews .review
+    {
+        height: 240px;
+    }
+
+
+    .reviews .review .front,
+    .reviews .review .back
+    {
+        padding-inline: 60px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .map
+    {
+        width: 524px;
+    }
+
+
+    .contacts_info .data
+    {
+        width: calc(100% - 548px);
+    }
+
+
+    .contacts_info .paths .item .name
+    {
+        line-height: 128%;
+    }
+
+
+
+    /*------------------
+        Project info
+    ------------------*/
+    .project_info .head .data
+    {
+        width: 520px;
+    }
+
+
+    .project_info .head .image
+    {
+        width: calc(100% - 460px);
+        margin-right: -80px;
+    }
+
+
+
+    .project_info .why .item .title
+    {
+        font-size: var(--font_size_xxl);
+    }
+
+
+    .project_info .why .item
+    {
+        width: 344px;
+    }
+
+
+    .project_info .why .item.b_w
+    {
+        width: 408px;
+        padding-top: 28px;
+    }
+
+
+    .project_info .why .item .items
+    {
+        gap: var(--inner_gap_xs);
+    }
+
+
+    .project_info .why .item .options > * + *
+    {
+        margin-top: var(--inner_gap_l);
+    }
+
+
+
+    .project_info .changing .grid_row
+    {
+        --items_per_line: 4;
+    }
+
+
+    .project_info .changing .main
+    {
+        margin-top: var(--inner_gap_l);
+
+        font-size: 24px;
+    }
+
+
+
+    .project_info .included .data
+    {
+        height: 324px;
+    }
+
+
+    .project_info .included .item
+    {
+        width: 324px;
+
+        font-size: var(--font_size_xxl);
+    }
+
+
+    .project_info .included .price .val
+    {
+        font-size: 148px;
+    }
+
+
+    .project_info .included .price .val:before
+    {
+        bottom: 24px;
+        left: -16px;
+    }
+
+
+    .project_info .included .price .exp
+    {
+        margin-top: -20px;
+
+        font-size: 28px;
+    }
+
+
+
+    .project_info .kids_receive .block_head
+    {
+        width: 324px;
+    }
+
+
+    .project_info .kids_receive .picture
+    {
+        width: 140px;
+        margin-left: 100px;
+    }
+
+
+    .project_info .kids_receive .items
+    {
+        width: 460px;
+        margin-left: 100px;
+
+        font-size: var(--font_size_xxl);
+
+        gap: 28px;
+    }
+
+
+
+    .project_info .photo_gallery .swiper-slide
+    {
+        height: 560px;
+        padding-inline: var(--inner_gap_l);
+    }
+
+
+    .project_info .photo_gallery .swiper-button-next
+    {
+        right: var(--inner_gap_l);
+    }
+
+
+    .project_info .photo_gallery .swiper-button-prev
+    {
+        right: calc(var(--inner_gap_l) + var(--swiper-navigation-size) + var(--inner_gap_s));
+    }
+
+
+
+    .project_info .formats .data .col
+    {
+        width: calc(50% - 80px);
+    }
+
+
+    .project_info .formats .data .name
+    {
+        font-size: 26px;
+    }
+
+
+    .project_info .formats .data .duration
+    {
+        padding-block: 3px;
+    }
+
+
+    .project_info .formats .data .prices
+    {
+        margin-top: 0;
+    }
+
+
+    .project_info .formats .data .prices .general
+    {
+        min-width: 160px;
+    }
+
+
+    .project_info .formats .btn
+    {
+        margin-top: var(--block_padding_l);
+    }
+
+
+
+    /*------------
+        Safety
+    ------------*/
+    .safety .grid_row
+    {
+        display: grid;
+        overflow: auto;
+
+        margin-block: 0;
+        margin-inline: calc(var(--cont_padding) * -1);
+        padding-inline: var(--cont_padding);
+
+        gap: var(--inner_gap_xs);
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        scroll-padding: 0 var(--inner_gap);
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent;
+        scrollbar-width: thin;
+    }
+
+
+    .safety .grid_row::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+
+    .safety .grid_row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+
+    .safety .grid_row > *
+    {
+        width: 224px;
+        margin: 0;
+
+        scroll-snap-align: start;
+    }
+
+
+    .safety .item .name
+    {
+        min-height: 40px;
+    }
+
+
+    .safety .item .icon
+    {
+        height: 40px;
+    }
+
+
+
+    /*-----------------------
+        In touch with you
+    -----------------------*/
+    .in_touch_with_you .items .icon
+    {
+        width: 40px;
+    }
+
+
+    .in_touch_with_you .items .icon + *
+    {
+        width: calc(100% - 40px - var(--inner_gap_l));
+    }
+
+
+    .in_touch_with_you .image img
+    {
+        width: 432px;
+        height: 425px;
+    }
+
+
+
+    /*-------------
+        Why now
+    -------------*/
+    .why_now .desc
+    {
+        font-size: var(--font_size_xxl);
+    }
+
+
+    .why_now .image
+    {
+        margin-left: var(--block_padding_l);
+    }
+
+
+    .why_now .image img
+    {
+        width: 512px;
+        height: 460px;
+    }
+}

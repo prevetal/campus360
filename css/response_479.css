@@ -1,0 +1,475 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_xxl: 20px;
+        --font_size_xl: 18px;
+        --font_size_l: 16px;
+        --font_size: 14px;
+        --font_size_s: 12px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        --swiper-navigation-size: 60px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo img
+    {
+        width: 112px;
+        height: 49px;
+    }
+
+
+    header .menu .mini_modal_btn
+    {
+        width: 120px;
+        height: 58px;
+
+        font-size: var(--font_size);
+    }
+
+
+    header .menu .mini_modal_btn .icon
+    {
+        width: 18px;
+    }
+
+
+    header .menu .mini_modal
+    {
+        width: 335px;
+    }
+
+
+    header .menu .mini_modal .btn
+    {
+        height: 58px;
+    }
+
+
+    header .menu .mini_modal .btn:before
+    {
+        width: 37px;
+        height: 87px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .btn
+    {
+        height: 58px;
+    }
+
+
+    .block_head .btn:before
+    {
+        width: 37px;
+        height: 87px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form
+    {
+        --form_input_height: 58px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .name
+    {
+        font-size: 60px;
+    }
+
+
+    .first_section .mode .btns:before
+    {
+        top: -18px;
+
+        width: 37px;
+        height: 87px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .grid_row > *
+    {
+        width: 200px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .grid_row > *
+    {
+        width: 240px;
+    }
+
+
+    .steps .item
+    {
+        min-height: 320px;
+    }
+
+
+    .steps .item .number
+    {
+        font-size: 48px;
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .grid_row
+    {
+        --gap_x: var(--inner_gap);
+        --gap_y: var(--inner_gap);
+    }
+
+
+    .why_we .item .icon,
+    .why_we .item .icon img
+    {
+        width: 20px;
+    }
+
+
+    .why_we .item span
+    {
+        width: calc(100% - 20px - var(--inner_gap_xs));
+    }
+
+
+
+    /*-------------
+        Gallery
+    -------------*/
+    .gallery:not(.block)
+    {
+        margin-bottom: var(--inner_gap_m);
+    }
+
+
+    .gallery .grid_row > *
+    {
+        width: 200px;
+    }
+
+
+
+    /*-----------------
+        Info blocks
+    -----------------*/
+    .info_blocks .slider_block .cont
+    {
+        min-height: 550px;
+    }
+
+
+    .info_blocks .info_block .title
+    {
+        width: 320px;
+
+        font-size: var(--font_size_title_s);
+    }
+
+
+
+    /*------------
+        Nearby
+    ------------*/
+    .nearby .grid_row > *
+    {
+        width: 200px;
+    }
+
+
+    .nearby .item
+    {
+        min-height: 280px;
+    }
+
+
+
+    /*-----------
+        Rules
+    -----------*/
+    .rules .item .number
+    {
+        top: var(--inner_gap_s);
+        right: var(--inner_gap_s);
+    }
+
+
+    .rules .item .name
+    {
+        width: 240px;
+    }
+
+
+
+    /*-------------
+        Persons
+    -------------*/
+    .persons .grid_row > *
+    {
+        width: 240px;
+    }
+
+
+    .persons .person .tg_link
+    {
+        bottom: var(--inner_gap_xs);
+
+        width: calc(100% - var(--inner_gap_xs) * 2);
+        height: 48px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .swiper-slide
+    {
+        width: 280px;
+    }
+
+
+    .reviews .review
+    {
+        height: 220px;
+    }
+
+
+    .reviews .review .front,
+    .reviews .review .back
+    {
+        padding-inline: 48px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .map
+    {
+        height: 360px;
+    }
+
+
+    .contacts_info .paths .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+    .contacts_info .contacts .grid_row
+    {
+        --items_per_line: 1;
+        --gap_y: var(--block_padding);
+        --gap_x: var(--inner_gap);
+    }
+
+
+
+    /*------------------
+        Project info
+    ------------------*/
+    .project_info .head .back_link
+    {
+        height: 58px;
+        padding-inline: var(--inner_gap_l);
+
+        font-size: var(--font_size);
+    }
+
+
+    .project_info .head .back_link .icon
+    {
+        width: 20px;
+    }
+
+
+    .project_info .head .name
+    {
+        line-height: 120%;
+    }
+
+
+    .project_info .head .info
+    {
+        gap: var(--inner_gap_xxs);
+    }
+
+
+    .project_info .head .info .icon
+    {
+        width: 16px;
+    }
+
+
+
+    .project_info .changing .grid_row
+    {
+        --gap_x: var(--inner_gap);
+        --gap_y: var(--inner_gap);
+    }
+
+
+    .project_info .changing .item .icon,
+    .project_info .changing .item .icon img
+    {
+        width: 20px;
+    }
+
+
+    .project_info .changing .item span
+    {
+        width: calc(100% - 20px - var(--inner_gap_xs));
+    }
+
+
+    .project_info .changing .main
+    {
+        justify-content: center;
+
+        text-align: center;
+
+        gap: 0;
+    }
+
+
+
+    .project_info .included .price .val
+    {
+        font-size: 100px;
+    }
+
+
+
+    .project_info .kids_receive .download a
+    {
+        height: 58px;
+        padding-inline: var(--inner_gap_l);
+
+        font-size: var(--font_size);
+    }
+
+
+    .project_info .kids_receive .items .icon
+    {
+        width: 32px;
+        min-height: 24px;
+    }
+
+
+    .project_info .kids_receive .items .icon + *
+    {
+        width: calc(100% - 32px - var(--inner_gap_m));
+    }
+
+
+
+    .project_info .photo_gallery .swiper-slide
+    {
+        width: 280px;
+    }
+
+
+    .project_info .photo_gallery .name
+    {
+        font-size: 24px;
+    }
+
+
+
+    .project_info .formats .data .top
+    {
+        gap: var(--inner_gap_xxs);
+    }
+
+
+    .project_info .formats .data .name
+    {
+        font-size: 20px;
+    }
+
+
+    .project_info .formats .btn
+    {
+        height: 58px;
+    }
+
+
+
+    /*------------
+        Safety
+    ------------*/
+    .safety .grid_row > *
+    {
+        width: 200px;
+    }
+
+
+    .safety .item .title
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*-------------
+        Why now
+    -------------*/
+    .why_now .sub_title
+    {
+        font-size: 26px;
+    }
+
+
+    .why_now .sub_title span::before
+    {
+        right: 87px;
+    }
+
+
+    .why_now .sub_title span:after
+    {
+        width: 204px;
+    }
+
+
+    .why_now .btns .btn
+    {
+        height: 58px;
+    }
+}

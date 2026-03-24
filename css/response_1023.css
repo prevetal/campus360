@@ -1,0 +1,481 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .partner
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .btn
+    {
+        margin-top: var(--inner_gap_xs);
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .desc
+    {
+        width: 100%;
+    }
+
+
+    .first_section .mode
+    {
+        margin-top: var(--inner_gap);
+        margin-left: 0;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+
+    /*--------------
+        For whom
+    --------------*/
+    .for_whom .block_head
+    {
+        width: 100%;
+        margin-bottom: var(--block_head_offset);
+    }
+
+
+    .for_whom .if_you_need
+    {
+        width: calc(50% - var(--inner_gap));
+    }
+
+
+    .for_whom .other_place
+    {
+        width: calc(50% - var(--inner_gap));
+    }
+
+
+    .for_whom .if_you_need .items,
+    .for_whom .other_place .items
+    {
+        gap: var(--inner_gap_s);
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .block_head
+    {
+        flex-direction: column;
+    }
+
+
+    .steps .block_head .title,
+    .steps .block_head .desc
+    {
+        width: 100%;
+    }
+
+
+    .steps .item .name
+    {
+        font-size: var(--font_size_xl);
+    }
+
+
+
+    /*-----------------
+        Info blocks
+    -----------------*/
+    .info_blocks .accordion
+    {
+        width: 400px;
+    }
+
+
+
+    /*------------
+        Nearby
+    ------------*/
+    .nearby .item
+    {
+        min-height: 320px;
+    }
+
+
+
+    /*-----------
+        Rules
+    -----------*/
+    .rules .item .icon
+    {
+        right: 124px;
+
+        width: 148px;
+    }
+
+
+    .rules .item:first-child .icon
+    {
+        right: 116px;
+
+        width: 166px;
+    }
+
+
+
+    /*------------------
+        Project info
+    ------------------*/
+    .project_info .head .data
+    {
+        width: 100%;
+    }
+
+
+    .project_info .head .name span:after
+    {
+        width: 92px;
+        height: 7px;
+    }
+
+
+    .project_info .head .info
+    {
+        width: 100%;
+    }
+
+
+    .project_info .head .info > *
+    {
+        height: 44px;
+    }
+
+
+    .project_info .head .image
+    {
+        width: 100%;
+        margin-top: var(--block_padding_l);
+        margin-right: 0;
+    }
+
+
+
+    .project_info .why .block_head .title span:after
+    {
+        width: 320px;
+        height: 7px;
+    }
+
+
+    .project_info .why .item
+    {
+        width: calc(50% - var(--inner_gap));
+    }
+
+
+    .project_info .why .item.b_w
+    {
+        width: 100%;
+        margin-top: var(--block_padding_s);
+    }
+
+
+    .project_info .why .item .title
+    {
+        font-size: var(--font_size_l);
+    }
+
+
+    .project_info .why .item .options > * + *
+    {
+        margin-top: var(--inner_gap);
+        padding-top: var(--inner_gap);
+    }
+
+
+    .project_info .why .grass
+    {
+        width: 200%;
+        margin-inline: -50%;
+    }
+
+
+
+    .project_info .changing
+    {
+        padding-bottom: 0;
+    }
+
+
+    .project_info .changing .grid_row
+    {
+        --items_per_line: 3;
+    }
+
+
+    .project_info .changing .item
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .project_info .changing .main
+    {
+        margin-top: var(--block_padding);
+
+        font-size: var(--font_size_title_xs);
+    }
+
+
+
+    .project_info .included
+    {
+        padding-bottom: 0;
+    }
+
+
+    .project_info .included .data
+    {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        height: auto;
+    }
+
+
+    .project_info .included .item
+    {
+        position: relative;
+
+        width: fit-content;
+        margin-top: var(--inner_gap_l);
+
+        font-size: var(--font_size_l);
+
+        text-align: center;
+    }
+
+
+    .project_info .included .item:after
+    {
+        bottom: 80%;
+
+        width: 29px;
+        height: 28px;
+    }
+
+
+    .project_info .included .price
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        width: fit-content;
+
+        transform: none;
+    }
+
+
+    .project_info .included .price .val
+    {
+        font-size: 120px;
+    }
+
+
+    .project_info .included .price .exp
+    {
+        font-size: 20px;
+    }
+
+
+
+    .project_info .kids_receive .picture
+    {
+        display: none;
+    }
+
+
+    .project_info .kids_receive .items
+    {
+        width: calc(100% - 348px);
+    }
+
+
+
+    .project_info .photo_gallery .swiper-slide
+    {
+        height: 440px;
+        padding-block: var(--cont_padding);
+        padding-inline: 0;
+    }
+
+
+    .project_info .photo_gallery .swiper-button-next,
+    .project_info .photo_gallery .swiper-button-prev
+    {
+        bottom: var(--cont_padding);
+    }
+
+
+    .project_info .photo_gallery .swiper-button-next
+    {
+        right: var(--cont_padding);
+    }
+
+
+    .project_info .photo_gallery .swiper-button-prev
+    {
+        right: calc(var(--cont_padding) + var(--swiper-navigation-size) + var(--inner_gap_s));
+    }
+
+
+
+    .project_info .formats .data .col
+    {
+        width: 100%;
+    }
+
+
+    .project_info .formats .data .sep
+    {
+        width: 100%;
+        height: 1px;
+        margin-block: var(--block_padding);
+        margin-inline: auto;
+
+        background: rgba(217, 217, 217, .50);
+    }
+
+
+    .project_info .formats .data .sep img
+    {
+        display: none;
+    }
+
+
+    .project_info .formats .data .name
+    {
+        font-size: 22px;
+    }
+
+
+    .project_info .formats .data .prices .general
+    {
+        min-width: 0;
+        margin-right: var(--inner_gap_l);
+    }
+
+
+    .project_info .formats .data .prices > *
+    {
+        padding-left: var(--inner_gap_xs);
+    }
+
+
+
+    /*-----------------------
+        In touch with you
+    -----------------------*/
+    .in_touch_with_you .items
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .in_touch_with_you .items > *
+    {
+        gap: var(--inner_gap);
+    }
+
+
+    .in_touch_with_you .items .icon
+    {
+        width: 32px;
+    }
+
+
+    .in_touch_with_you .items .icon + *
+    {
+        width: calc(100% - 32px - var(--inner_gap));
+    }
+
+
+    .in_touch_with_you .image
+    {
+        display: none;
+    }
+
+
+
+    /*-------------
+        Why now
+    -------------*/
+    .why_now .data
+    {
+        width: 100%;
+    }
+
+
+    .why_now .desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .why_now .sub_title
+    {
+        font-size: 28px;
+    }
+
+
+    .why_now .sub_title span::before
+    {
+        right: 94px;
+    }
+
+
+    .why_now .sub_title span:after
+    {
+        width: 220px;
+    }
+
+
+    .why_now .desc.small,
+    .why_now .btns
+    {
+        margin-top: var(--inner_gap);
+    }
+
+
+    .why_now .image
+    {
+        display: none;
+    }
+}
