@@ -165,6 +165,12 @@ document.addEventListener('DOMContentLoaded', function() {
 			$('.first_section .image' + ($(this).index() + 1)).addClass('show')
 		}
 	})
+
+
+	// Calendar
+	new AirDatepicker('.input_date', {
+		autoClose: true,
+	})
 })
 
 

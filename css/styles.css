@@ -226,25 +226,6 @@ video.cover
 
 
 
-.overlay
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    display: none;
-
-    width: 100%;
-    height: 100%;
-
-    z-index: 100;
-
-    opacity: .6;
-    background: var(--dark_color);
-}
-
-
-
 /*--------------
     Fancybox
 --------------*/
@@ -284,51 +265,13 @@ video.cover
 /*--------------
     ButtonUp
 --------------*/
-.buttonUp
+.air-datepicker
 {
-    position: fixed;
-    right: var(--cont_padding);
-    bottom: var(--cont_padding);
-
-    display: none;
-
-    z-index: 10;
-}
-
-
-.buttonUp .btn
-{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    width: 60px;
-
-    transition: background .2s linear;
-
-    color: var(--light_color);
-    border-radius: 50%;
-    background: var(--primary_color);
-
-    aspect-ratio: 1 / 1;
-}
-
-
-.buttonUp .btn .icon
-{
-    display: block;
-
-    width: 24px;
-
-    aspect-ratio: 1 / 1;
-}
-
-
-.buttonUp .btn:hover
-{
-    background: var(--secondary_color);
+    --adp-cell-background-color-selected: var(--secondary_color);
+    --adp-day-name-color: var(--primary_color);
+    --adp-day-name-color-hover: var(--secondary_color);
+    --adp-cell-background-color-selected-hover: var(--secondary_color);
+    --adp-accent-color: var(--secondary_color);
 }
 
 
@@ -1805,13 +1748,17 @@ header .menu .mini_modal .btn:hover
 
 .advantages .item
 {
+    position: relative;
+
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     justify-content: space-between;
 
     min-height: 340px;
     padding: var(--inner_gap_m);
 
+    transition: .2s linear;
     text-align: center;
 
     border: 1px solid rgba(186, 186, 186, .12);
@@ -1827,11 +1774,18 @@ header .menu .mini_modal .btn:hover
     background: var(--bg_green);
 }
 
-
 .advantages .item:nth-child(2n)
 {
     color: var(--primary_color);
     background: var(--bg_yellow);
+}
+
+
+.advantages .item > *
+{
+    position: relative;
+
+    z-index: 3;
 }
 
 
@@ -1869,6 +1823,40 @@ header .menu .mini_modal .btn:hover
 
     max-width: 100%;
     max-height: 100%;
+}
+
+
+.advantages .item .image
+{
+    position: absolute;
+    inset: 0;
+
+    display: block;
+
+    z-index: 1;
+    transition: opacity .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+
+.advantages .item:hover
+{
+    color: var(--light_color);
+    background: transparent;
+}
+
+
+.advantages .item:hover .image
+{
+    opacity: 1;
+}
+
+
+.advantages .item:hover .icon
+{
+    display: none;
 }
 
 
@@ -1987,6 +1975,59 @@ header .menu .mini_modal .btn:hover
     display: block;
 
     background: var(--grey_color);
+}
+
+
+.projects .project .link
+{
+    position: absolute;
+    right: var(--inner_gap);
+    bottom: var(--inner_gap);
+
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 38px;
+
+    z-index: 3;
+
+    color: var(--light_color);
+    border-radius: 50%;
+    background: var(--primary_color);
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.projects .project .link:before
+{
+    position: absolute;
+    top: -11px;
+    left: -6px;
+
+    display: block;
+
+    width: 24px;
+    height: 56px;
+
+    content: '';
+
+    background: url(../images/bg_project_link.svg) 0 0/100% 100% no-repeat;
+}
+
+
+.projects .project .link .icon
+{
+    display: block;
+
+    width: 14px;
+
+    transform: scale(1, -1);
+
+    aspect-ratio: 1 / 1;
 }
 
 
@@ -2758,13 +2799,17 @@ header .menu .mini_modal .btn:hover
 
 .nearby .item
 {
+    position: relative;
+
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     justify-content: space-between;
 
     min-height: 420px;
     padding: var(--inner_gap_m);
 
+    transition: .2s linear;
     text-align: center;
 
     border: 1px solid rgba(186, 186, 186, .12);
@@ -2780,11 +2825,18 @@ header .menu .mini_modal .btn:hover
     background: var(--bg_green);
 }
 
-
 .nearby .item:nth-child(2n)
 {
     color: var(--primary_color);
     background: var(--bg_yellow);
+}
+
+
+.nearby .item > *
+{
+    position: relative;
+
+    z-index: 3;
 }
 
 
@@ -2822,6 +2874,40 @@ header .menu .mini_modal .btn:hover
 
     max-width: 100%;
     max-height: 100%;
+}
+
+
+.nearby .item .image
+{
+    position: absolute;
+    inset: 0;
+
+    display: block;
+
+    z-index: 1;
+    transition: opacity .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+
+.nearby .item:hover
+{
+    color: var(--light_color);
+    background: transparent;
+}
+
+
+.nearby .item:hover .image
+{
+    opacity: 1;
+}
+
+
+.nearby .item:hover .icon
+{
+    display: none;
 }
 
 

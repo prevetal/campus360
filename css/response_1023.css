@@ -53,6 +53,12 @@
     }
 
 
+    .projects .project .link
+    {
+        display: flex;
+    }
+
+
 
     /*--------------
         For whom
