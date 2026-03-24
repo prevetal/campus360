@@ -97,13 +97,16 @@ document.addEventListener('DOMContentLoaded', function() {
 		let item = $(this).closest('.accordion_item'),
 			accordion = $(this).closest('.accordion')
 
-		if (item.hasClass('active')) {
-			item.removeClass('active').find('.data').slideUp(300)
-		} else {
+		if (!item.hasClass('active')) {
 			accordion.find('.accordion_item').removeClass('active')
 			accordion.find('.data').slideUp(300)
 
 			item.addClass('active').find('.data').slideDown(300)
+
+			const index = (item.index() + 1)
+
+			$('.info_blocks .slider_block .swiper').removeClass('show')
+			$('.info_blocks .slider_block .swiper' + index).addClass('show')
 		}
 	})
 

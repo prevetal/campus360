@@ -2533,6 +2533,26 @@ header .menu .mini_modal .btn:hover
 }
 
 
+.info_blocks .slider_block .swiper
+{
+    position: absolute;
+    inset: 0;
+
+    z-index: 1;
+    transition: opacity .2s linear;
+
+    opacity: 0;
+}
+
+
+.info_blocks .slider_block .swiper.show
+{
+    z-index: 2;
+
+    opacity: 1;
+}
+
+
 .info_blocks .slider_block .swiper-button-next,
 .info_blocks .slider_block .swiper-button-prev
 {
@@ -2565,6 +2585,7 @@ header .menu .mini_modal .btn:hover
     padding-block: var(--outside_gap_s);
 
     z-index: 3;
+    pointer-events: none;
 }
 
 
@@ -2583,6 +2604,8 @@ header .menu .mini_modal .btn:hover
 {
     width: 478px;
     max-width: 100%;
+
+    pointer-events: auto;
 
     color: var(--light_color);
 }
