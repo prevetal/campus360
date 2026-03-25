@@ -231,15 +231,15 @@ video.cover
 --------------*/
 .fancybox__container
 {
-    --fancybox-backdrop-bg: var(--dark_color);
-    --f-close-button-width: 40px;
-    --f-close-button-height: 40px;
+    --fancybox-backdrop-bg: rgba(0,0,0,.64);
+    --f-close-button-width: auto;
+    --f-close-button-height: 22px;
     --f-close-border-radius: 0;
-    --f-close-button-color: var(--dark_color);
-    --f-close-button-hover-color: var(--dark_color);
-    --f-close-button-svg-width: 24px;
-    --f-close-button-svg-height: 24px;
-    --f-close-button-svg-stroke-width: 1;
+    --f-close-button-color: var(--light_color);
+    --f-close-button-hover-color: var(--primary_color);
+    --f-close-button-svg-width: 18px;
+    --f-close-button-svg-height: 18px;
+    --f-close-button-svg-stroke-width: 0;
     --f-close-button-bg: transparent;
     --f-close-button-hover-bg: transparent;
     --f-close-button-active-bg: transparent;
@@ -256,8 +256,27 @@ video.cover
 
 .f-button.is-close-button
 {
-    top: 0;
+    top: auto;
     right: 0;
+    bottom: 100%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-bottom: var(--inner_gap_s);
+
+    font-size: var(--font_size_s);
+
+    gap: var(--inner_gap_xxs);
+}
+
+
+.f-button.is-close-button span
+{
+    transform: translateY(-1px);
 }
 
 
@@ -5240,4 +5259,27 @@ footer .creator .icon
 footer .creator a:hover span
 {
     color: var(--primary_color);
+}
+
+
+
+/*-----------
+    PopUp
+-----------*/
+.modal
+{
+    display: none;
+    visibility: visible !important;
+    flex-direction: column;
+
+    width: var(--modal_width);
+    max-width: 100%;
+    padding: var(--inner_gap);
+
+    color: var(--dark_color);
+    border: 1px solid var(--grey_color);
+    border-radius: var(--border_radius);
+    background: var(--light_color);
+
+    --modal_width: 466px;
 }

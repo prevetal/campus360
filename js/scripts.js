@@ -90,6 +90,47 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
+	// Fancybox
+	const fancyOptions = {
+		dragToClose: false,
+		placeFocusBack: false,
+		l10n: {
+			CLOSE: 'Закрыть',
+			NEXT: 'Следующий',
+			PREV: 'Предыдущий',
+			MODAL: 'Вы можете закрыть это модальное окно нажав клавишу ESC'
+		},
+		on: {
+			ready: (fancybox) => {
+				const container = fancybox.getContainer()
+
+				const btn = container.querySelector('.is-close-button')
+
+				if (btn) {
+					btn.classList.add('is-close-btn')
+					btn.innerHTML = '<span>Закрыть</span><svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>'
+				}
+			}
+		}
+	}
+
+
+	// Modals
+	$('.modal_btn').click(function(e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show(
+			[{
+				src: `#${e.target.getAttribute('data-modal')}`,
+				type: 'inline'
+			}],
+			fancyOptions
+		)
+	})
+
+
 	// Accordion
 	$('body').on('click', '.accordion .accordion_item .head', function(e) {
 		e.preventDefault()
